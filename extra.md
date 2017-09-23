@@ -75,4 +75,4 @@ Geleverd *met* batterijen!
 --------------
 
 - argument parser
-- `counts = defaultdict(int)`
+- `counts = Counter()`
