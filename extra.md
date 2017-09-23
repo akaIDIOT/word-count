@@ -1,18 +1,5 @@
-Python alsof het echte software is
-==================================
-
-
-
-Startpunt
-=========
-
-~~~~
-$ python3 wordcount.py map/met/tekst
-de    123
-het   45
-een   6
-…
-~~~~
+word-count extra's
+==================
 
 
 
@@ -38,7 +25,7 @@ Argumenttypes
 - read + write
 
 - niet zwart wit:
-	- read + transform  / filter (kan uiteraard prima los)
+	- read + transform / filter (kan uiteraard prima los)
 
 `wordcount.py`
 --------------
@@ -89,4 +76,3 @@ Geleverd *met* batterijen!
 
 - argument parser
 - `counts = defaultdict(int)`
-
