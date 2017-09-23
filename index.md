@@ -54,6 +54,7 @@ Performance
 - file descriptors
 - *alles* in geheugen → generators / iterators
 - wanneer maakt zoiets nou uit?
+- `threading` / `multiprocessing` / `concurrent.futures` / `ascynio` / `joblib` ?
 
 `wordcount.py`
 --------------
