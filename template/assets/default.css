@@ -1,0 +1,64 @@
+h1, h2 {
+    display: inline-block;
+    margin: .2em 0 .4em 0;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    margin-top: .2em;
+}
+
+#impress .slide {
+    position: relative;
+    width: 1200px;
+    min-height: 600px;
+    padding: 50px;
+
+    font-family: Lato, Verdana, sans-serif;
+    font-size: 300%;
+
+    -webkit-transition: opacity .1s;
+    -moz-transition: opacity .1s;
+    -ms-transition: opacity .1s;
+    -o-transition: opacity .1s;
+    transition: opacity .1s
+}
+
+#impress .slide:not(.present) {
+    opacity: 0;
+}
+
+#impress .slide:not(.present) a {
+    display: none;
+}
+
+#impress .slide .slide-num {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+#impress .slide .codehilite {
+    margin-bottom: 1em;
+    padding: 0 .4em;
+    border-top: .1em #669 solid;
+    border-bottom: .1em #669 solid;
+    background: #ddf;
+}
+
+#impress .slide p img {
+    display: block;
+    margin: auto;
+}
+
+#impress .slide h1 ~ p img {
+    width: 50%;
+}
+
+#impress .slide .footnote {
+    font-size: 50%;
+    color: #666;
+}
