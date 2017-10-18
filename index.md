@@ -57,6 +57,7 @@ Requirements
 - `pip --version` (verwijst naar welke versie van Python?)
     - eventueel `pip3`
 - `pip show pip`
+- PyCharm (community of professional)
 
 
 
@@ -87,6 +88,13 @@ $ virtualenv --python python3 pad/naar/env
 $ source pad/naar/env/activate   # *nix
 $ pad\naar\env\Scripts\activate  # windows
 ~~~~
+
+
+
+Virtual reality: PyCharm
+------------------------
+
+![interpreter in PyCharm](assets/project-interpreter.png)
 
 
 
