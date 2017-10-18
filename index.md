@@ -348,3 +348,87 @@ Documentatie
 ------------
 
 ![thumbs up](assets/thumbs-up.svg)
+
+
+
+Automatisering: tox
+-------------------
+
+- soort van `Makefile`
+- één of meerdere 'testenvs'
+- maakt zelf virtual envs
+- daarna soort van shell script
+- vooral handig voor build servers, herhaalbaarheid buiten je eigen bubbel
+
+*populaire conventie: `…/tox.ini`*
+
+
+
+Automatisering: `tox.ini`
+-------------------------
+
+normaliter *buiten* de virtualenv voor je project:
+
+~~~~ text
+$ pip install tox
+~~~~
+
+~~~~ ini
+[testenv]
+commands =
+    …
+deps =
+    …
+~~~~
+
+~~~~
+$ tox
+…
+~~~~
+
+
+
+Automatisering: tests en docs
+-----------------------------
+
+~~~~ ini
+# 'default' testenv
+[testenv]
+commands =
+    py.test --strict tests
+deps =
+    pytest
+
+# non-default testenv named "docs"
+[testenv:docs]
+commands =
+    sphinx-build -b html docs/ dist/docs/
+deps =
+    sphinx
+~~~~
+
+
+
+Automatisering: Python versies
+------------------------------
+
+~~~~ ini
+# global config
+[tox]
+envlist = py33, py34, py35, py36
+skip_missing_interpreters = True
+~~~~
+
+~~~~ text
+$ tox
+…  # (times 4)
+~~~~
+
+kan veel meer, zie vooral [tox.readthedocs.io](https://tox.readthedocs.io)
+
+
+
+Automatisering
+--------------
+
+![thumbs up](assets/thumbs-up.svg)
