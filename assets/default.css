@@ -12,7 +12,7 @@ ul {
 #impress .slide {
     position: relative;
     width: 1200px;
-    min-height: 600px;
+    height: 900px;
     padding: 50px;
 
     font-family: Lato, Verdana, sans-serif;
@@ -48,10 +48,11 @@ ul {
 #impress .slide p img {
     display: block;
     max-width: 100%;
+    max-height: 100%;
     margin: auto;
 }
 
-#impress .slide h1 ~ p img {
+#impress .slide h1 ~ p img, #impress .slide h2 ~ p img {
     width: 70%;
 }
 
