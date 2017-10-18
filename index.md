@@ -219,3 +219,17 @@ autodoc_default_flags = ['members', 'undoc-members']
 ~~~~
 
 Zie [Sphinx' `autodoc` doc](http://www.sphinx-doc.org/en/stable/ext/autodoc.html) voor meer
+
+
+
+Documentatie: PyCharm
+---------------------
+
+![Spinx in PyCharm](assets/new-docs-runner.png)
+
+
+
+Documentatie: PyCharm
+---------------------
+
+![Spinx in PyCharm](assets/docs-runner.png)
