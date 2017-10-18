@@ -98,6 +98,13 @@ Virtual reality: PyCharm
 
 
 
+Virtual reality
+---------------
+
+![thumbs up](assets/thumbs-up.svg)
+
+
+
 Unit tests
 ----------
 
@@ -157,6 +164,13 @@ def test_tokenize(text, words):
 ----
 
 ¹: importeer uit module `hamcrest`
+
+
+
+Unit tests
+----------
+
+![thumbs up](assets/thumbs-up.svg)
 
 
 Documentatie: Spinx
@@ -233,3 +247,10 @@ Documentatie: PyCharm
 ---------------------
 
 ![Spinx in PyCharm](assets/docs-runner.png)
+
+
+
+Documentatie
+------------
+
+![thumbs up](assets/thumbs-up.svg)
