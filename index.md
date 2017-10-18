@@ -253,9 +253,18 @@ Packaging
 
 
 Documentatie: Spinx
-----------------------
+-------------------
 
-krachtige tool, maar veel TLC nodig…
+- krachtige tool, maar veel TLC nodig…
+- geconfigureerd in Python
+- genereert documentatie vanaf `index.rst`
+- reStructuredText (☹)
+- importeert code, rendert docstrings zoals bijv. *readthedocs.org*
+
+
+
+Documentatie: Sphinx
+--------------------
 
 ~~~~ text
 $ pip install sphinx
