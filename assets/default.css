@@ -55,6 +55,12 @@ ul {
     margin: auto;
 }
 
+#impress .slide .footnote-ref, #impress .slide .footnote-backref {
+    font-size: 75%;
+    color: inherit;
+    text-decoration: inherit;
+}
+
 #impress .slide .footnote {
     font-size: 50%;
     color: #666;
