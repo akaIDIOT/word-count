@@ -98,6 +98,67 @@ Virtual reality: PyCharm
 
 
 
+Unit tests
+----------
+
+- een 'unit' is klein
+- `wordcount.py` is niet handig testbaar ☹ (één unit)
+- eerst fixen of eerst tests maken?
+    - pragmatisme of test driven development
+
+
+
+Unit tests: pytest
+------------------
+
+~~~~ text
+$ pip install pytest
+~~~~
+
+`tests/test_wordcount.py`:
+
+~~~~ python
+def test_tokenize():
+    text = 'De kat krabt de krullen van de trap.'
+    words = tokenize(text)
+
+    assert 'krullen' in words
+    assert 'trap' in words
+~~~~
+
+
+
+Unit tests: PyCharm
+-------------------
+
+![pytest in PyCharm](assets/test-runner.png)
+
+Rechts-klik op `tests`, ▶ Run 'py.test in tests'
+
+
+
+Bonus tests
+-----------
+
+`pytest` heeft handige helpers, `pyhamcrest`¹ maakt één en ander leesbaarder:
+
+~~~~ python
+@pytest.mark.parametrize('text, words', [
+    ('test', ['test']),
+    ('testing\n123', ['testing', '123']),
+])
+def test_tokenize(text, words):
+    assert_that(tokenize(text),
+                contains_inanyorder(*words))
+~~~~
+
+`mock` / `unittest.mock` kan dingen die in de weg zitten (HTTP-requests, database-cursors, …) 'mocken'
+
+----
+
+¹: importeer uit module `hamcrest`
+
+
 Documentatie: Spinx
 ----------------------
 
