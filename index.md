@@ -473,3 +473,51 @@ Style checking
 --------------
 
 ![thumbs up](assets/thumbs-up.svg)
+
+
+
+Code coverage
+-------------
+
+- bijhouden welke code wel en niet geraakt is door een test
+- geen doel, maar fijn middel om te zien of je test doet wat je bedoelde
+- *populaire conventie: `coverage`*
+
+
+
+Code coverage: automatisering
+-----------------------------
+
+~~~~ ini
+[testenv]
+# let coverage run py.test, generate HTML-report in dist
+commands =
+    coverage run --branch --source hansken --module py.test --strict tests/
+    coverage html --dir dist/coverage/
+deps =
+    coverage
+    pytest
+~~~~
+
+
+
+Code coverage: resultaat
+------------------------
+
+![coverage in PyCharm](assets/coverage-html.png)
+
+
+
+Code coverage: PyCharm (Professional)
+-------------------------------------
+
+![coverage in PyCharm](assets/run-coverage.png)
+
+![coverage in PyCharm](assets/coverage-pycharm.png)
+
+
+
+Code coverage
+-------------
+
+![thumbs up](assets/thumbs-up.svg)
