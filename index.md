@@ -15,6 +15,7 @@ Hoezo?!
 - impulsgroep DUPLO™
 
 
+
 Invulling
 ---------
 
@@ -33,6 +34,7 @@ Not Invented Here™
 - project-layout (`test_dingen.py` of `tests/test_iets.py`, …)
 - gebruikte tools (`pytest` of `unittest2`, …)
 - verder: "populaire conventie"
+
 
 
 What TODO
