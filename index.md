@@ -149,7 +149,7 @@ Rechts-klik op `tests`, ▶ Run 'py.test in tests'
 Bonus tests
 -----------
 
-`pytest` heeft handige helpers, `pyhamcrest`¹ maakt één en ander leesbaarder:
+`pytest` heeft handige helpers, `pyhamcrest`[^1] maakt één en ander leesbaarder:
 
 ~~~~ python
 @pytest.mark.parametrize('text, words', [
@@ -163,9 +163,7 @@ def test_tokenize(text, words):
 
 `mock` / `unittest.mock` kan dingen die in de weg zitten (HTTP-requests, database-cursors, …) 'mocken'
 
-----
-
-¹: importeer uit module `hamcrest`
+[^1]: importeer uit module `hamcrest`
 
 
 
@@ -175,10 +173,89 @@ Unit tests
 ![thumbs up](assets/thumbs-up.svg)
 
 
+
+Packaging
+---------
+
+- pakketje wat Python 'snapt'
+- Python packages, modules *en dependencies*
+
+*(niet alleen) populaire conventie: `…/setup.py`*
+
+
+
+Packaging: `setup.py`
+---------------------
+
+~~~~ python
+from setuptools import setup
+
+
+setup(
+    name='wordcount',
+    version='0.0',             # see PEP-440
+    description='Count words, duh',
+    author='Henk de Vries',
+    author_email='henk.de.vries@nfi.minvenj.nl',
+    py_modules=['wordcount'],  # single module
+    install_requires=[],       # no dependencies
+)
+~~~~
+
+
+
+Packaging: `wordcount.tar.gz`
+-----------------------------
+
+~~~~ text
+$ python setup.py bdist
+$ ls dist/
+wordcount-0.0.linux-x86_64.tar.gz
+~~~~
+
+euh… `x86_64`? `.tar.gz`? ☹
+
+
+
+Packaging: `wordcount.whl`
+--------------------------
+
+~~~~ text
+$ pip install wheel
+$ python setup.py bdist_wheel
+$ ls dist/
+wordcount-0.0-py3-none-any.whl
+~~~~
+
+oeh, `py3-none-any`, `.whl` ☺
+
+
+
+Packaging: `pip install wordcount`
+----------------------------------
+
+- afdeling heeft een PyPI-server (😘 FIG)
+- iedereen heeft leesrechten
+- schrijfrechten op aanvraag
+- configuratie op confluence
+
+~~~~ text
+$ twine upload --repository dbs dist/*.whl
+~~~~
+
+
+
+Packaging
+---------
+
+![thumbs up](assets/thumbs-up.svg)
+
+
+
 Documentatie: Spinx
 ----------------------
 
-Krachtige tool, maar veel TLC nodig…
+krachtige tool, maar veel TLC nodig…
 
 ~~~~ text
 $ pip install sphinx
@@ -197,9 +274,13 @@ $ sphinx-quickstart
 Documentatie: `conf.py`
 ----------------------
 
+vies, maar hier nodig…
+
 ~~~~ python
 import os
 import sys
+
+
 sys.path.insert(0, os.path.abspath('..'))
 ~~~~
 
