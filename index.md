@@ -24,6 +24,7 @@ Invulling
 - spelen met veelgebruikte tooling
     - `pytest`, `setuptools`, `sphinx`, `tox`, `wheel`, …
     - PyCharm
+- disclaimer: dit is een dive, geen *deep* dive
 
 
 
