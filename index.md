@@ -32,7 +32,7 @@ Not Invented Here™
 - github's trending python projects als inspiratie (`keras`, `requests`, …)
 - project-layout (`test_dingen.py` of `tests/test_iets.py`, …)
 - gebruikte tools (`pytest` of `unittest2`, …)
-
+- verder: "populaire conventie"
 
 
 What TODO
@@ -113,6 +113,8 @@ Unit tests
 - eerst fixen of eerst tests maken?
     - pragmatisme of test driven development
 
+*populaire conventie: test-code in `…/tests/`*
+
 
 
 Unit tests: pytest
@@ -122,7 +124,7 @@ Unit tests: pytest
 $ pip install pytest
 ~~~~
 
-`tests/test_wordcount.py`:
+`…/tests/test_wordcount.py`:
 
 ~~~~ python
 def test_tokenize():
@@ -187,6 +189,8 @@ $ sphinx-quickstart
 > Create Makefile? (y/n) [y]: n
 > Create Windows command file? (y/n) [y]: n
 ~~~~
+
+*populaire conventie: doc root in `…/docs/`*
 
 
 
