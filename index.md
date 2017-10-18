@@ -76,6 +76,20 @@ $ python3 wordcount.py map/met/tekst
 
 
 
+Virtual reality
+---------------
+
+Alle DUPLO-blokken netjes in de doos:
+
+~~~~ text
+$ pip install virtualenv
+$ virtualenv --python python3 pad/naar/env
+$ source pad/naar/env/activate   # *nix
+$ pad\naar\env\Scripts\activate  # windows
+~~~~
+
+
+
 Documentatie: Spinx
 ----------------------
 
