@@ -39,13 +39,13 @@ What TODO
 ---------
 
 - `virtualenv`
-- documentatie met `sphinx`
 - unittests met `pytest`
 - packaging met `setuptools` en `wheel`
+- documentatie met `sphinx`
 - automatisering met `tox`
 - eventueel
     - 'lint' met `flake8`
-    - coverage met `coverage`
+    - test/code coverage met `coverage`
 
 
 
