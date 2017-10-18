@@ -51,12 +51,8 @@ ul {
 #impress .slide p img {
     display: block;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 800px;
     margin: auto;
-}
-
-#impress .slide h1 ~ p img, #impress .slide h2 ~ p img {
-    width: 70%;
 }
 
 #impress .slide .footnote {
