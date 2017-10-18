@@ -397,7 +397,7 @@ Automatisering: tests en docs
 # 'default' testenv
 [testenv]
 commands =
-    py.test --strict tests
+    py.test --strict tests/
 deps =
     pytest
 
@@ -431,6 +431,45 @@ kan veel meer, zie vooral [tox.readthedocs.io](https://tox.readthedocs.io)
 
 
 Automatisering
+--------------
+
+![thumbs up](assets/thumbs-up.svg)
+
+
+
+Style-checking
+--------------
+
+- programma's die zeuren dat je code lelijk™ is (bijv. PyCharm ☺)
+- voor Python vrij goed gedefinieerd: PEP-8
+- uniform met andere projecten; 'pythonic'
+- *populaire conventie: `flake8`*
+    - kent PEP-8 vrij goed
+    - zeurt per regel
+    - kan regels overslaan
+
+
+
+Style checking: automatisering
+------------------------------
+
+~~~~ ini
+[testenv]
+# any failing command stops and fails env
+commands =
+    flake8 wordcount.py
+    py.test --strict tests/
+# flake8 does plugins, like pep8-naming
+deps =
+    flake8
+    flake8-comprehensions
+    pep8-naming
+    pytest
+~~~~
+
+
+
+Style checking
 --------------
 
 ![thumbs up](assets/thumbs-up.svg)
