@@ -35,8 +35,8 @@ Not Invented Here™
 
 
 
-TODO
-----
+What TODO
+---------
 
 - `virtualenv`
 - documentatie met `sphinx`
@@ -46,6 +46,17 @@ TODO
 - eventueel
     - 'lint' met `flake8`
     - coverage met `coverage`
+
+
+
+Requirements
+------------
+
+- `git --version`
+- `python3 --version`
+- `pip --version` (verwijst naar welke versie van Python?)
+    - eventueel `pip3`
+- `pip show pip`
 
 
 
