@@ -255,6 +255,64 @@ Packaging
 
 
 
+Requirements
+------------
+
+- `requirements.txt` bekend
+- `pip freeze`?
+- waar depend je nou echt op?
+    - `requests==1.2.3` of `requests`
+    - `neo4j==3.2.1rc4` of `neo4j>=3`
+
+
+
+Requirements: `setup.py`
+------------------------
+
+definieer je *echte dependencies* in `setup.py`:
+
+~~~~ python
+from setuptools import setup
+
+
+setup(
+    ...,
+    install_requires=[
+        'requests',
+        'neo4j>=3',
+    ]
+)
+~~~~
+
+
+
+Requirements: `requirements.txt`
+--------------------------------
+
+laat een tool vervolgens je *development dependencies* bepalen:
+
+~~~~ text
+$ pip install pip-tools
+$ pip-compile --output-file requirements.txt setup.py
+~~~~
+
+~~~~ requirements
+certifi==2017.7.27.1      # via requests
+chardet==3.0.4            # via requests
+idna==2.6                 # via requests
+requests==2.18.4
+urllib3==1.22             # via requests
+~~~~
+
+
+
+Requirements
+------------
+
+![thumbs up](assets/thumbs-up.svg)
+
+
+
 Documentatie: Spinx
 -------------------
 
