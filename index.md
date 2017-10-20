@@ -346,13 +346,11 @@ $ sphinx-quickstart
 Documentatie: `conf.py`
 ----------------------
 
-vies, maar hier nodig…
+vies, maar hier nodig (staat er al bijna)…
 
 ~~~~ python
 import os
 import sys
-
-
 sys.path.insert(0, os.path.abspath('..'))
 ~~~~
 
