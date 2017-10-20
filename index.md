@@ -159,7 +159,7 @@ Bonus tests
     ('test', ['test']),
     ('testing\n123', ['testing', '123']),
 ])
-def test_tokenize(text, words):
+def test_tokenize_fancier(text, words):
     assert_that(tokenize(text),
                 contains_inanyorder(*words))
 ~~~~
