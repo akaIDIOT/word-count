@@ -279,7 +279,6 @@ setup(
     ...,
     install_requires=[
         'requests',
-        'neo4j>=3',
     ]
 )
 ~~~~
@@ -578,5 +577,12 @@ Code coverage: PyCharm (Professional)
 
 Code coverage
 -------------
+
+![thumbs up](assets/thumbs-up.svg)
+
+
+
+DUPLO
+-----
 
 ![thumbs up](assets/thumbs-up.svg)
