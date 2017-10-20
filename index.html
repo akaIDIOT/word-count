@@ -15,7 +15,7 @@
 <p><img alt="DUPLO" src="assets/duplo.svg" /></p>
 
             <div class="slide-num">
-                1 / 46
+                1 / 47
             </div>
         </div>
     
@@ -30,7 +30,7 @@
 </ul>
 
             <div class="slide-num">
-                2 / 46
+                2 / 47
             </div>
         </div>
     
@@ -48,7 +48,7 @@
 </ul>
 
             <div class="slide-num">
-                3 / 46
+                3 / 47
             </div>
         </div>
     
@@ -62,7 +62,7 @@
 </ul>
 
             <div class="slide-num">
-                4 / 46
+                4 / 47
             </div>
         </div>
     
@@ -82,7 +82,7 @@
 </ul>
 
             <div class="slide-num">
-                5 / 46
+                5 / 47
             </div>
         </div>
     
@@ -100,7 +100,7 @@
 </ul>
 
             <div class="slide-num">
-                6 / 46
+                6 / 47
             </div>
         </div>
     
@@ -114,14 +114,8 @@ $ python3 wordcount.py map/met/tekst
 [(&#39;de&#39;, 123), (&#39;het&#39;, 45), (&#39;een&#39;, 6)]
 </pre></div>
 
-
-<ul>
-<li>PyCharm</li>
-<li><code>virtualenv</code></li>
-</ul>
-
             <div class="slide-num">
-                7 / 46
+                7 / 47
             </div>
         </div>
     
@@ -135,7 +129,7 @@ $ pad\naar\env\Scripts\activate  # windows
 </pre></div>
 
             <div class="slide-num">
-                8 / 46
+                8 / 47
             </div>
         </div>
     
@@ -144,7 +138,7 @@ $ pad\naar\env\Scripts\activate  # windows
 <p><img alt="interpreter in PyCharm" src="assets/project-interpreter.png" /></p>
 
             <div class="slide-num">
-                9 / 46
+                9 / 47
             </div>
         </div>
     
@@ -153,7 +147,7 @@ $ pad\naar\env\Scripts\activate  # windows
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                10 / 46
+                10 / 47
             </div>
         </div>
     
@@ -170,7 +164,7 @@ $ pad\naar\env\Scripts\activate  # windows
 <p><em>populaire conventie: test-code in <code>…/tests/</code></em></p>
 
             <div class="slide-num">
-                11 / 46
+                11 / 47
             </div>
         </div>
     
@@ -181,7 +175,10 @@ $ pad\naar\env\Scripts\activate  # windows
 
 
 <p><code>…/tests/test_wordcount.py</code>:</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">test_tokenize</span><span class="p">():</span>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">wordcount</span> <span class="kn">import</span> <span class="n">tokenize</span>
+
+
+<span class="k">def</span> <span class="nf">test_tokenize</span><span class="p">():</span>
     <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;De kat krabt de krullen van de trap.&#39;</span>
     <span class="n">words</span> <span class="o">=</span> <span class="n">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 
@@ -190,7 +187,7 @@ $ pad\naar\env\Scripts\activate  # windows
 </pre></div>
 
             <div class="slide-num">
-                12 / 46
+                12 / 47
             </div>
         </div>
     
@@ -200,7 +197,7 @@ $ pad\naar\env\Scripts\activate  # windows
 <p>Rechts-klik op <code>tests</code>, ▶ Run 'py.test in tests'</p>
 
             <div class="slide-num">
-                13 / 46
+                13 / 47
             </div>
         </div>
     
@@ -211,7 +208,7 @@ $ pad\naar\env\Scripts\activate  # windows
     <span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]),</span>
     <span class="p">(</span><span class="s1">&#39;testing</span><span class="se">\n</span><span class="s1">123&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;testing&#39;</span><span class="p">,</span> <span class="s1">&#39;123&#39;</span><span class="p">]),</span>
 <span class="p">])</span>
-<span class="k">def</span> <span class="nf">test_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">words</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">test_tokenize_fancier</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">words</span><span class="p">):</span>
     <span class="n">assert_that</span><span class="p">(</span><span class="n">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">),</span>
                 <span class="n">contains_inanyorder</span><span class="p">(</span><span class="o">*</span><span class="n">words</span><span class="p">))</span>
 </pre></div>
@@ -228,7 +225,7 @@ $ pad\naar\env\Scripts\activate  # windows
 </div>
 
             <div class="slide-num">
-                14 / 46
+                14 / 47
             </div>
         </div>
     
@@ -237,7 +234,7 @@ $ pad\naar\env\Scripts\activate  # windows
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                15 / 46
+                15 / 47
             </div>
         </div>
     
@@ -250,7 +247,7 @@ $ pad\naar\env\Scripts\activate  # windows
 <p><em>(niet alleen) populaire conventie: <code>…/setup.py</code></em></p>
 
             <div class="slide-num">
-                16 / 46
+                16 / 47
             </div>
         </div>
     
@@ -271,7 +268,7 @@ $ pad\naar\env\Scripts\activate  # windows
 </pre></div>
 
             <div class="slide-num">
-                17 / 46
+                17 / 47
             </div>
         </div>
     
@@ -286,7 +283,7 @@ wordcount-0.0.linux-x86_64.tar.gz
 <p>euh… <code>x86_64</code>? <code>.tar.gz</code>? ☹</p>
 
             <div class="slide-num">
-                18 / 46
+                18 / 47
             </div>
         </div>
     
@@ -302,7 +299,7 @@ wordcount-0.0-py3-none-any.whl
 <p>oeh, <code>py3-none-any</code>, <code>.whl</code> ☺</p>
 
             <div class="slide-num">
-                19 / 46
+                19 / 47
             </div>
         </div>
     
@@ -318,7 +315,7 @@ wordcount-0.0-py3-none-any.whl
 </pre></div>
 
             <div class="slide-num">
-                20 / 46
+                20 / 47
             </div>
         </div>
     
@@ -327,7 +324,7 @@ wordcount-0.0-py3-none-any.whl
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                21 / 46
+                21 / 47
             </div>
         </div>
     
@@ -344,7 +341,7 @@ wordcount-0.0-py3-none-any.whl
 </ul>
 
             <div class="slide-num">
-                22 / 46
+                22 / 47
             </div>
         </div>
     
@@ -358,13 +355,12 @@ wordcount-0.0-py3-none-any.whl
     <span class="o">...</span><span class="p">,</span>
     <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span>
         <span class="s1">&#39;requests&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;neo4j&gt;=3&#39;</span><span class="p">,</span>
     <span class="p">]</span>
 <span class="p">)</span>
 </pre></div>
 
             <div class="slide-num">
-                23 / 46
+                23 / 47
             </div>
         </div>
     
@@ -384,7 +380,7 @@ urllib3==1.22             # via requests
 </pre></div>
 
             <div class="slide-num">
-                24 / 46
+                24 / 47
             </div>
         </div>
     
@@ -393,12 +389,12 @@ urllib3==1.22             # via requests
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                25 / 46
+                25 / 47
             </div>
         </div>
     
         <div class="slide step">
-            <h2>Documentatie: Spinx</h2>
+            <h2>Documentatie: Sphinx</h2>
 <ul>
 <li>krachtige tool, maar veel TLC nodig…</li>
 <li>geconfigureerd in Python</li>
@@ -408,7 +404,7 @@ urllib3==1.22             # via requests
 </ul>
 
             <div class="slide-num">
-                26 / 46
+                26 / 47
             </div>
         </div>
     
@@ -418,7 +414,9 @@ urllib3==1.22             # via requests
 $ cd …/word-count
 $ sphinx-quickstart
 &gt; Root path for the documentation [.]: docs
+…
 &gt; autodoc: automatically insert docstrings from modules (y/n) [n]: y
+…
 &gt; Create Makefile? (y/n) [y]: n
 &gt; Create Windows command file? (y/n) [y]: n
 </pre></div>
@@ -427,22 +425,20 @@ $ sphinx-quickstart
 <p><em>populaire conventie: doc root in <code>…/docs/</code></em></p>
 
             <div class="slide-num">
-                27 / 46
+                27 / 47
             </div>
         </div>
     
         <div class="slide step">
             <h2>Documentatie: <code>conf.py</code></h2>
-<p>vies, maar hier nodig…</p>
+<p>vies, maar hier nodig (staat er al bijna)…</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
-
-
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
 </pre></div>
 
             <div class="slide-num">
-                28 / 46
+                28 / 47
             </div>
         </div>
     
@@ -456,7 +452,7 @@ $ sphinx-quickstart
 </pre></div>
 
             <div class="slide-num">
-                29 / 46
+                29 / 47
             </div>
         </div>
     
@@ -479,7 +475,7 @@ $ sphinx-quickstart
 <p>Zie <a href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">Sphinx' <code>autodoc</code> doc</a> voor meer</p>
 
             <div class="slide-num">
-                30 / 46
+                30 / 47
             </div>
         </div>
     
@@ -488,7 +484,7 @@ $ sphinx-quickstart
 <p><img alt="Spinx in PyCharm" src="assets/new-docs-runner.png" /></p>
 
             <div class="slide-num">
-                31 / 46
+                31 / 47
             </div>
         </div>
     
@@ -497,7 +493,7 @@ $ sphinx-quickstart
 <p><img alt="Spinx in PyCharm" src="assets/docs-runner.png" /></p>
 
             <div class="slide-num">
-                32 / 46
+                32 / 47
             </div>
         </div>
     
@@ -506,7 +502,7 @@ $ sphinx-quickstart
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                33 / 46
+                33 / 47
             </div>
         </div>
     
@@ -522,7 +518,7 @@ $ sphinx-quickstart
 <p><em>populaire conventie: <code>…/tox.ini</code></em></p>
 
             <div class="slide-num">
-                34 / 46
+                34 / 47
             </div>
         </div>
     
@@ -546,7 +542,7 @@ $ sphinx-quickstart
 </pre></div>
 
             <div class="slide-num">
-                35 / 46
+                35 / 47
             </div>
         </div>
     
@@ -568,7 +564,7 @@ $ sphinx-quickstart
 </pre></div>
 
             <div class="slide-num">
-                36 / 46
+                36 / 47
             </div>
         </div>
     
@@ -589,7 +585,7 @@ $ sphinx-quickstart
 <p>kan veel meer, zie vooral <a href="https://tox.readthedocs.io">tox.readthedocs.io</a></p>
 
             <div class="slide-num">
-                37 / 46
+                37 / 47
             </div>
         </div>
     
@@ -598,7 +594,7 @@ $ sphinx-quickstart
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                38 / 46
+                38 / 47
             </div>
         </div>
     
@@ -617,7 +613,7 @@ $ sphinx-quickstart
 </ul>
 
             <div class="slide-num">
-                39 / 46
+                39 / 47
             </div>
         </div>
     
@@ -637,7 +633,7 @@ $ sphinx-quickstart
 </pre></div>
 
             <div class="slide-num">
-                40 / 46
+                40 / 47
             </div>
         </div>
     
@@ -646,7 +642,7 @@ $ sphinx-quickstart
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                41 / 46
+                41 / 47
             </div>
         </div>
     
@@ -659,7 +655,7 @@ $ sphinx-quickstart
 </ul>
 
             <div class="slide-num">
-                42 / 46
+                42 / 47
             </div>
         </div>
     
@@ -676,7 +672,7 @@ $ sphinx-quickstart
 </pre></div>
 
             <div class="slide-num">
-                43 / 46
+                43 / 47
             </div>
         </div>
     
@@ -685,7 +681,7 @@ $ sphinx-quickstart
 <p><img alt="coverage in PyCharm" src="assets/coverage-html.png" /></p>
 
             <div class="slide-num">
-                44 / 46
+                44 / 47
             </div>
         </div>
     
@@ -695,7 +691,7 @@ $ sphinx-quickstart
 <p><img alt="coverage in PyCharm" src="assets/coverage-pycharm.png" /></p>
 
             <div class="slide-num">
-                45 / 46
+                45 / 47
             </div>
         </div>
     
@@ -704,7 +700,16 @@ $ sphinx-quickstart
 <p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
 
             <div class="slide-num">
-                46 / 46
+                46 / 47
+            </div>
+        </div>
+    
+        <div class="slide step">
+            <h2>DUPLO</h2>
+<p><img alt="thumbs up" src="assets/thumbs-up.svg" /></p>
+
+            <div class="slide-num">
+                47 / 47
             </div>
         </div>
     
