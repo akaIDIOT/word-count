@@ -127,6 +127,9 @@ $ pip install pytest
 `…/tests/test_wordcount.py`:
 
 ~~~~ python
+from wordcount import tokenize
+
+
 def test_tokenize():
     text = 'De kat krabt de krullen van de trap.'
     words = tokenize(text)
