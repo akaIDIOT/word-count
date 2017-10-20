@@ -332,7 +332,9 @@ $ pip install sphinx
 $ cd …/word-count
 $ sphinx-quickstart
 > Root path for the documentation [.]: docs
+…
 > autodoc: automatically insert docstrings from modules (y/n) [n]: y
+…
 > Create Makefile? (y/n) [y]: n
 > Create Windows command file? (y/n) [y]: n
 ~~~~
