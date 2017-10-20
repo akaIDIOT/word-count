@@ -313,8 +313,8 @@ Requirements
 
 
 
-Documentatie: Spinx
--------------------
+Documentatie: Sphinx
+--------------------
 
 - krachtige tool, maar veel TLC nodig…
 - geconfigureerd in Python
