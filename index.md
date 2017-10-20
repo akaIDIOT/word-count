@@ -75,9 +75,6 @@ $ python3 wordcount.py map/met/tekst
 [('de', 123), ('het', 45), ('een', 6)]
 ~~~~
 
-- PyCharm
-- `virtualenv`
-
 
 
 Virtual reality
