@@ -569,6 +569,12 @@ Code coverage: resultaat
 Code coverage: PyCharm (Professional)
 -------------------------------------
 
+PyCharm heeft ook `coverage` nodig:
+
+~~~~ text
+$ pip install coverage
+~~~~
+
 ![coverage in PyCharm](assets/run-coverage.png)
 
 ![coverage in PyCharm](assets/coverage-pycharm.png)
