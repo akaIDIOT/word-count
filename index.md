@@ -77,6 +77,78 @@ $ python3 wordcount.py map/met/tekst
 
 
 
+Wat is deze?!
+-------------
+
+*Wat schort er aan de code?*
+
+- herbruikbaarheid
+- gebruik van resources
+- not invented here™
+- …
+
+
+
+Wat is deze `run`?!
+-------------------
+
+*draait alle code bij `import`…*
+
+~~~~ python
+if __name__ == '__main__':
+    import sys
+    run(sys.argv[1:])
+~~~~
+
+
+
+Wat is deze `read`?!
+--------------------
+
+*file descriptors moeten eigenlijk weer dicht na gebruik…*
+
+~~~~ python
+with open(fname) as fobj:
+    source += fobj.read()
+~~~~
+
+
+
+Wat is deze `counts`?!
+----------------------
+
+*Python's standard lib is 'batteries included'…*
+
+~~~~ python
+from collections import Counter
+
+
+counts = Counter()
+counts.update(words)
+~~~~
+
+
+
+Wat is deze `+=`?!
+------------------
+
+*leest alle data in één keer in geheugen, gewoon direct gebruiken…*
+
+~~~~ python
+with open(fname) as fobj:
+    words = fobj.read().split()
+    counts.update(words)
+~~~~
+
+
+
+Wat is deze?!
+-------------
+
+![thumbs up](assets/thumbs-up.svg)
+
+
+
 Virtual reality
 ---------------
 
